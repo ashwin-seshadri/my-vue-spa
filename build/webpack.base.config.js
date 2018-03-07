@@ -31,7 +31,8 @@ const config = {
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/',
     filename:'assets/js/[name].js'
-  }
+  },
+  devtool: '#eval-source-map'
 };
 
 module.exports = config;
