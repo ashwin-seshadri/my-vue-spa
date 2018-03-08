@@ -1,10 +1,12 @@
-import Vue from 'vue'
-import AppLayout from './theme/Layout.vue'
-import router from './router'
+import Vue from 'vue';
+import AppLayout from './theme/Layout.vue';
+import router from './router';
+import store from './vuex/index.js'
 
 const app = new Vue({
   router,
-  "render": h => h(AppLayout)
+  store,
+  ...AppLayout
 })
 
-export { app, router }
+export { app, router, store }
