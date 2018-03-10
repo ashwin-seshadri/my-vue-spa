@@ -32,7 +32,7 @@ const config = {
     publicPath: '/',
     filename:'assets/js/[name].js'
   },
-  devtool: '#eval-source-map'
+  devtool: 'eval-source-map'
 };
 
 module.exports = config;
